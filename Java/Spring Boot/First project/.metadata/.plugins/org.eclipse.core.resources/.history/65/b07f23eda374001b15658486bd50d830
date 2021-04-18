@@ -1,0 +1,16 @@
+package com.appdeveloper.app.ws.service.impl;
+
+import java.util.List;
+
+import com.appdeveloper.app.ws.service.AddressesService;
+import com.appdeveloper.app.ws.shared.dto.AddressDTO;
+
+public class AddressesServiceImpl implements AddressService {
+
+	@Override
+	public List<AddressDTO> getAddress(String userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

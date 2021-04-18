@@ -1,0 +1,31 @@
+import java.util.Arrays;
+
+public class bubbleSort {
+
+	public static void main(String[] args) {
+		Integer[] array = new Integer[] {12,13,24,10,3,5,79,25};
+		bubbleSort(array,0,array.length);
+		System.out.printf("Lista: %s ", Arrays.toString(array));
+
+	}
+	@SuppressWarnings({"rawtypes", "unchecked"})
+	public static void bubbleSort(Object[] array, int fromIndex, int toIndex) {
+		
+		Object d;
+		for(int i = toIndex - 1;i > fromIndex; i++) {
+			boolean isSorted = true;
+			for(int j = fromIndex; j < i; j++) {
+				if(((Comparable) array[j]).compareTo(array[j+1]) > 0){
+					isSorted = false;
+					d = array[j+1];
+					array[j+1]= array[j];
+					array[j] = d;
+				}
+				if(isSorted) {
+					break;
+				}
+			}
+		}
+	}
+
+}

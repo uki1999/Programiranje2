@@ -1,0 +1,13 @@
+import java.util.Arrays;
+import java.lang.reflect.Array;
+
+
+public class quickSort {
+
+	public static void main(String[] args) {
+		
+		int[]arr ={ 12, 13, 14, 24, 10, 3, 6, 90, 70 };
+		
+		Arrays.sort(arr);
+		}
+}

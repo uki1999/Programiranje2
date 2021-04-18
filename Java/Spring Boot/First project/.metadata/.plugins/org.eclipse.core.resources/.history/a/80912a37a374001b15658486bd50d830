@@ -1,0 +1,5 @@
+package com.appdeveloper.app.ws.service;
+
+public class AddressesService {
+
+}

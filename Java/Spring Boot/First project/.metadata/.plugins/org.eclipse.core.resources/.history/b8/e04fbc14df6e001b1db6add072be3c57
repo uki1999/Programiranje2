@@ -1,0 +1,6 @@
+package com.appdeveloper.app.ws.security;
+
+public class AuthorizationFilter extends BasicAuthenticationFilter {
+
+	public AuthorizationFilter
+}
