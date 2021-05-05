@@ -1,4 +1,0 @@
-#Sun Mar 21 17:31:12 CET 2021
-base.0=/home/uki1999/Programiranje/Java/Android/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
