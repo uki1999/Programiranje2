@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/darkerColor"
+    tools:context="com.kurs.iserbia.istorijskikviz.com.kurs.iserbia.geoistorijskiviz.MainActivity">
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/magic_button"
+        android:onClick="magic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:magic_button_size="50dp"
+        app:button_icon="@drawable/globus2"
+        app:button_icon_width="25dp"
+        app:button_icon_height="25dp"
+        app:hide_text="Posetite stranicu"
+        app:hide_text_size="6dp"
+        app:hide_text_color="@android:color/black"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_alignStart="@+id/relativeLayout2" />
+
+    <RelativeLayout
+        android:padding="20dp"
+        android:elevation="4dp"
+        android:background="@drawable/ravne_ivice"
+        android:layout_width="200dp"
+        android:layout_height="210dp"
+        android:id="@+id/relativeLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/btnGrupa"
+            android:padding="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                         O kvizu"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="9sp"
+                android:text="Zdravo korisnice,ja sam kreator aplikacije.Ova aplikacija pospesuje da te nauci necemu i takodje da proveri tvoje znanje.Ako ste nezadovoljni necim u aplikaciji,prijavite na opciji povratne informacije i ako imas predlog posalji da poboljsamo aplikaciju
+
+U potpisu,
+Kreator aplikacije" />
+
+        </LinearLayout>
+            </RelativeLayout>
+            </RelativeLayout>

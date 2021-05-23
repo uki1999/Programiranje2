@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Geoistorijski kviz</string>
+    <string-array name="titles">
+        <item>Opšte znanje iz istorije</item>
+        <item>Pogađanja zastava iz geografije</item>
+    </string-array>
+    <string-array name="description">
+        <item>Prošlost</item>
+        <item>Ipak se okreće</item>
+    </string-array>
+    <string-array name="titles2">
+    <item>Istorija</item>
+    <item>Geografija</item>
+    </string-array>
+
+
+</resources>

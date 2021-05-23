@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kurs.iserbia.istorijskikviz">
+
+    <uses-sdk android:minSdkVersion="16"
+        android:targetSdkVersion="26"
+        android:maxSdkVersion="27" />
+    <supports-screens android:largeScreens="true" android:resizeable="true" android:smallScreens="false" android:xlargeScreens="true" android:normalScreens="true"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:vmSafeMode="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.kurs.iserbia.geoistorijskviz.Splashscreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.kurs.iserbia.geoistorijskviz.MainActivity"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.Main3">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.Kviz1"
+            android:screenOrientation="portrait"
+            android:label="History quiz"/>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.Kviz2"
+            android:screenOrientation="portrait"
+            android:label="Geography quiz"/>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.LakaPitanja"
+            android:screenOrientation="portrait"
+            android:label="Easy Mode History"/>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.MaloTezaPitanja2"
+            android:screenOrientation="portrait"
+            android:label="Medium Mode History"/>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.VeciSkorActivity"
+            android:screenOrientation="portrait"
+            android:label="Rezultat kviza"/>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.VeciSkorActivity2"
+            android:screenOrientation="portrait"
+            android:label="Rezultat kviza"/>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.VeciSkorActivity3"
+            android:screenOrientation="portrait"
+            android:label="Rezultat kviza"/>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.VeciSkorActivity4"
+            android:screenOrientation="portrait"
+            android:label="Rezultat kviza"/>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.VeciSkorActivity5"
+            android:screenOrientation="portrait"
+            android:label="Rezultat kviza"/>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.VeciSkorActivity6"
+            android:screenOrientation="portrait"
+            android:label="Rezultat kviza"/>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.NajtezaPitanjaIstorija2"
+            android:screenOrientation="portrait"
+            android:label="Hard Mode History"/>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.oKvizu"
+            android:screenOrientation="portrait"
+            android:label="O kvizu"/>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.feedback"
+            android:screenOrientation="portrait"
+            android:label="Povratne informacije"/>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.Zanimljivosti"
+            android:screenOrientation="portrait"
+            android:label="Zanimljivosti"/>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.LakaPitanjaGeografija"
+            android:screenOrientation="portrait"
+            android:label="Easy Mode Geography"/>
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.MaloTezaPitanjaGeografija"
+            android:screenOrientation="portrait"
+            android:label="Medium Mode Geography" />
+        <activity
+            android:name="com.kurs.iserbia.geoistorijskviz.NajtezaPitanjaGeografija"
+            android:screenOrientation="portrait"
+            android:label="Hard Mode Geography"
+            />
+    </application>
+
+</manifest>

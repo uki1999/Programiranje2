@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkerColor">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:elevation="4dp"
+        android:background="@drawable/ravne_ivice"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="467dp"
+        android:layout_marginEnd="467dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/btnGrupa"
+            android:padding="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+    <Button
+        android:id="@+id/easyMode"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e2d624"
+        android:onClick="easyMode"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:text="Easy Mode"
+        android:layout_above="@+id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="34dp" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:onClick="mediumMode"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:text="Medium Mode"
+        android:layout_marginBottom="41dp"
+        android:layout_above="@+id/button6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hard Mode"
+        android:background="#d80d35"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:onClick="hardMode"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+            </LinearLayout>
+        </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkerColor"
+    tools:context=".MainActivity">
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/logo"
+        android:onClick="onClick6"
+        android:background="@drawable/globe"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        />
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp" />
+    <RelativeLayout
+        android:layout_below="@+id/logo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:padding="20dp"
+        android:elevation="4dp"
+        android:background="@drawable/ravne_ivice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/btnGrupa"
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/dugme21"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreen"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:onClick="pocnikviz"
+        android:text="Počni kviz"
+        />
+
+        <Button
+            android:id="@+id/button34"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/colorGreen"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="zanimljivosti"
+            android:text="Zanimljivosti"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/button35"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/colorGreen"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="izadji"
+            android:text="Izadji iz aplikacije"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+        </RelativeLayout>
+</RelativeLayout>
