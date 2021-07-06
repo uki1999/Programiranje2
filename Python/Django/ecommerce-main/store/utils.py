@@ -10,7 +10,6 @@ def cookieCart(request):
     print('Cart: ',cart)
     items = []
     order = {'get_cart_total':0, 'get_cart_items':0, 'shipping':False}
-    # get_cart_items is a property of Order in models.py
     cartItems = order['get_cart_items']
 
     for i in cart:
@@ -43,7 +42,7 @@ def cookieCart(request):
 
 
 def cartData(request):
-    # giving the same code as cart, bcz same, total data will be rendered in frontend
+    # giving the same code as cart, beacuse it's same, total data will be rendered in frontend
     if request.user.is_authenticated:
         customer = request.user.customer
         # get_or_create is used to search for a qiven object,
