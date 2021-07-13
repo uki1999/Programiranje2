@@ -22,10 +22,35 @@ class _HomeScreenState extends State<HomeScreen> {
         children: <Widget>[
           HomeTopInfo(),
           FoodCategory(),
-          // SizedBox(
-          //   height: 20.0,
-          // ),
+          SizedBox(
+            height: 20.0,
+          ),
           SearchField(),
+          SizedBox(
+            height: 20.0,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Text(
+                "Frequently bought food",
+                style: TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              GestureDetector(
+                onTap: () {},
+                child: Text(
+                  "View all",
+                  style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.orangeAccent),
+                ),
+              )
+            ],
+          ),
         ],
       ),
     );
