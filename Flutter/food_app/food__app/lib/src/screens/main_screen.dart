@@ -6,10 +6,13 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
+  int currentTabIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: currentTabIndex,
+        type: BottomNavigationBarType.fixed,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -17,6 +20,10 @@ class _MainScreenState extends State<MainScreen> {
           ),
           BottomNavigationBarItem(
               icon: Icon(Icons.shopping_cart), title: Text("Orders")),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.favorite), title: Text("Favorite")),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.person), title: Text("Orders")),
         ],
       ),
     );
