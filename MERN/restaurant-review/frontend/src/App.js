@@ -2,22 +2,21 @@ import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import AddReview from "./components/add-review.js";
-import Restaurant from "./components/restaurants.js";
-import RestaurantsList from "./components/restaurants-list.js";
-import Login from "./components/login.js";
+import AddReview from "./components/add-review";
+import Restaurant from "./components/restaurants";
+import RestaurantsList from "./components/restaurants-list";
+import Login from "./components/login";
 
 function App() {
   const [user, setUser] = React.useState(null);
 
-  async function login(user = null){
+  async function login(user = null) {
     setUser(user);
   }
 
-  async function logout(){
-    setUser(null);
+  async function logout() {
+    setUser(null)
   }
-
 
   return (
     <div>
@@ -72,4 +71,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
